@@ -1,0 +1,23 @@
+@font-face {
+      font-family: 'digital-7';
+      src: url('../../../assets/digital-7.ttf');
+}
+.container {
+    display: grid;
+    background-color: #232323;
+}
+ 
+.screen, .back-screen {
+    font-family: 'digital-7', sans-serif;
+    grid-column: 1;
+    grid-row: 1;
+}
+.screen {
+    color: #81d732;
+    z-index: 1;
+    /* letter-spacing: 5px; */
+}
+.back-screen {
+    color: #314522;
+}
+    
