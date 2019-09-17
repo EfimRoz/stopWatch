@@ -1,10 +1,18 @@
-<div class="container">
-  <div class="screen">
-    <span stylizeNumber [value]="minutes">{{minutes | numberFormat}}</span> 
-    <span class="delimiter">:</span> 
-    <span stylizeNumber [value]="seconds">{{seconds | numberFormat}}</span> 
-    <span class="delimiter">.</span> 
-    <span stylizeNumber [value]="miliseconds">{{miliseconds | numberFormat}}</span>
+<div class="background">
+  <div class="container">
+    <div class="screen time-display">
+      <span class="minutes" stylizeNumber [value]="minutes">{{minutes | numberFormat}}</span> 
+      <span class="delimiter">:</span> 
+      <span class="seconds" stylizeNumber [value]="seconds">{{seconds | numberFormat}}</span> 
+      <span class="delimiter">.</span> 
+      <span class="miliseconds" stylizeNumber [value]="miliseconds">{{miliseconds | numberFormat}}</span>
+    </div>
+    <div class="back-screen time-display">
+      <span class="minutes">88</span> 
+      <span class="delimiter">:</span> 
+      <span class="seconds">88</span> 
+      <span class="delimiter">.</span> 
+      <span class="miliseconds">88</span>
+    </div>
   </div>
-  <div class="back-screen">88 : 88 . 88</div>
 </div>
